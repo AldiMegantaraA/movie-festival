@@ -24,7 +24,7 @@
             <div class="row" v-if="maxMovie.length > 0">
                 <div class="col-sm-6 my-4" v-for="item in maxMovie" :key="item">
                     <div class="card-body p-3 border rounded">
-                        <iframe :src="loadURL(item.url)" frameborder="0" width="600" height="300"></iframe>
+                        <iframe :src="loadURL(item.url)" frameborder="0" class="w-100" height="300"></iframe>
                         <h5 class="my-2">Title : {{item.title}}</h5>
                         <p>Duration : {{item.duration}}min</p>
                         <p>Description : {{item.description}}</p>
